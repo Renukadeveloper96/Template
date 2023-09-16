@@ -8,7 +8,6 @@ import { ContentPagesRoutingModule } from "./content-pages-routing.module";
 
 import { ErrorPageComponent } from "./error/error-page.component";
 import { LoginPageComponent } from "./login/login-page.component";
-import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -22,8 +21,7 @@ import { RegisterComponent } from './register/register.component';
     ],
     declarations: [
         ErrorPageComponent,
-        LoginPageComponent,
-        RegisterComponent
+        LoginPageComponent
     ]
 })
 export class ContentPagesModule { }

@@ -32,9 +32,6 @@ export class LoginPageComponent {
     return this.loginForm.controls;
   }
 
-  redirectToRegisterPage(){
-    this.router.navigate(['/pages/register']);
-  }
   // On submit button click
   onSubmit() {
     this.loginFormSubmitted = true;

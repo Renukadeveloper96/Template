@@ -21,15 +21,6 @@ const routes: Routes = [
         data: {
           title: 'Login Page'
         }
-        
-      },
-      {
-        path: 'register',
-        component: LoginPageComponent,
-        data: {
-          title: 'Register Page'
-        }
-        
       }
     ]
   }
