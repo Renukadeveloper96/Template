@@ -1,4 +1,5 @@
-
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 import { RouterModule } from '@angular/router';
 import { NgModule } from "@angular/core";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
@@ -11,6 +12,7 @@ import { HttpClientModule, HttpClient } from "@angular/common/http";
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { NgxSpinnerModule } from 'ngx-spinner';
+
 import {
   PerfectScrollbarModule,
   PERFECT_SCROLLBAR_CONFIG,
@@ -26,9 +28,6 @@ import { FullLayoutComponent } from "./layouts/full/full-layout.component";
 // import { AuthService } from "./shared/auth/auth.service";
 import { AuthGuard } from "./shared/auth/auth-guard.service";
 import { WINDOW_PROVIDERS } from './shared/services/window.service';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-
 var firebaseConfig = {
   apiKey: "YOUR_API_KEY", //YOUR_API_KEY
   authDomain: "YOUR_AUTH_DOMAIN", //YOUR_AUTH_DOMAIN
