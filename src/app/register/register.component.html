@@ -35,6 +35,56 @@
           </div>
         </div>
       </div>
+       <div class="form-group">
+        <label for="username">LastName</label>
+        <input
+          type="text"
+          class="form-control"
+          name="lastname"
+          [(ngModel)]="form.lastname"
+          required
+          minlength="3"
+          maxlength="20"
+          #username="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && username.errors }"
+        />
+        <div class="invalid-feedback" *ngIf="username.errors && f.submitted">
+          <div *ngIf="username.errors['required']">LastName is required</div>
+          <div *ngIf="username.errors['minlength']">
+            lastname must be at least 3 characters
+          </div>
+          <div *ngIf="username.errors['maxlength']">
+            lastname must be at most 20 characters
+          </div>
+        </div>
+      </div>
+      <!--+++++++-->
+      <!--+++++-->
+      <!--lastname-->
+      <!-- <div class="form-group">
+        <label for="lastname">Lastname</label>
+        <input
+          type="text"
+          class="form-control"
+          name="lastname"
+          [(ngModel)]="form.lastname"
+          required
+          minlength="3"
+          maxlength="20"
+          #username="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && lastname.errors }"
+        />
+        <div class="invalid-feedback" *ngIf="lastname.errors && f.submitted">
+          <div *ngIf="lastname.errors['required']">LastName is required</div>
+          <div *ngIf="lastname.errors['minlength']">
+            LastName must be at least 3 characters
+          </div>
+          <div *ngIf="lastname.errors['maxlength']">
+            LastName must be at most 20 characters
+          </div>
+        </div>
+      </div> -->
+      <!--lastname end-->
       <div class="form-group">
         <label for="email">Email</label>
         <input
@@ -50,7 +100,7 @@
         <div class="invalid-feedback" *ngIf="email.errors && f.submitted">
           <div *ngIf="email.errors['required']">Email is required</div>
           <div *ngIf="email.errors['email']">
-            Email must be a valid email address
+            Email must be a valid email address(@)
           </div>
         </div>
       </div>
